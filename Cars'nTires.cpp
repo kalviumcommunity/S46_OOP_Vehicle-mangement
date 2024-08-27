@@ -32,7 +32,7 @@ class Vehicle {
 private:
     string make;
     string model;
-    Tire t1;  
+    Tire tire;  
 
 public:
     
@@ -50,7 +50,7 @@ public:
     void displayInfo() const {
         cout << "Vehicle Make: " << make << ", Model: " << model << endl;
         cout << "Tire:" << endl;
-        t1.displayInfo();
+        tire.displayInfo();
     }
 };
 
@@ -60,7 +60,7 @@ int main() {
     string model = "Camry";
     Tire tire("Goodyear", "225/50R17");
 
-    Vehicle vehicle1(make, model, tire);
+    Vehicle vehicle(make, model, tire);
 
     vehicle.displayInfo();
 
